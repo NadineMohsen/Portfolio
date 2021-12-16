@@ -82,6 +82,7 @@ span{
     display:flex;
     flex-wrap:wrap;
     justify-content: center;
+    flex-direction: column;
 }  
 
 #about-me div{
@@ -108,10 +109,6 @@ img{
     width:170px;
     height:150px;
     margin-right:25px;
-}
-
-#work{
-    height:670px;
 }
 
 /* h3 elements are displayed on background-images for all projects */
@@ -222,8 +219,5 @@ footer{
         margin-right:0;
       }
       
-    #work{
-        height:1300px;
-    }
- 
+   
 }
