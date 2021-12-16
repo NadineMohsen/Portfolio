@@ -25,6 +25,7 @@ This portfolio highlights my strongest work as well as the thought processes beh
 ## Link to my Portfolio & Repo
 
 https://github.com/NadineMohsen/Portfolio
+
 https://nadinemohsen.github.io/Portfolio/
 
 ## Screenshot of my Portfolio
