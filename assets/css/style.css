@@ -11,7 +11,7 @@
 body{
     font-family: var(--font);
     display:flex;
-    flex-wrap:wrap;
+    /* flex-wrap:wrap; */
     flex-direction:column;
     line-height:1.3;
 }
@@ -78,13 +78,6 @@ section h2{
     margin-bottom:15px;   
 }
 
-span{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content: center;
-    flex-direction: column;
-}  
-
 #about-me div{
     display:flex;
     justify-content: space-between; 
@@ -122,13 +115,20 @@ h3{
     
 }
 
+ span{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    /* flex-direction: column;  */
+}   
+
 .projects{
-    flex: 1 0 400px;
+    flex: 1 0 300px;
 } 
 
 /* The first project section will grow larger than others */
 .grow{
-    flex: 3 0 400px;  
+    flex: 2 0 600px;  
 } 
 
 /* Style for all projects */
