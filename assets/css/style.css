@@ -210,10 +210,13 @@ footer{
     section h2{
         background-color:var(--gold);
     }
-
-    #about-me div{
-        flex-direction: column; 
+    .grow{
+        flex:2 0 300px;
     }
+    #about-me div, #work{
+        flex-direction: column;
+    }
+
     img{
         margin-bottom:20px;
         margin-right:0;
