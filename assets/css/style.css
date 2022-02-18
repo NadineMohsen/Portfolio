@@ -88,6 +88,13 @@ section h3{
     background-image: url("../images/img3.jpg");
 }
 
+.icons{
+    height:40px;
+    width:40px;
+  
+  align-items: right;
+}
+
 /* When the screen is smaller than 768px the layout will change */
 @media screen and (max-width: 768px) {
     /* slider h3 and h5 */
