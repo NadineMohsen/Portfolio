@@ -1,0 +1,35 @@
+html {
+    height: 100%;
+  }
+body{
+    color:white;
+    margin-top:20%;
+    background-image:url("../images/background1.jpg");
+    background-size: cover;
+    background-position: center; 
+    display:flex;
+}
+h1{
+    border-color:white;
+    color:#90caf9;
+
+}
+button{
+    margin-top:10%;
+    margin-right:10px;
+}
+
+img{
+    width:35px;
+    height:35px;
+}
+
+.links{
+    margin-top:20px;
+}
+.custom-button{
+    margin-top:3%;  
+    width:250px; 
+    text-align: center;
+  
+}
