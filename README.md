@@ -29,4 +29,4 @@ https://github.com/NadineMohsen/Portfolio
 https://nadinemohsen.github.io/Portfolio/
 
 ## Screenshot of my Portfolio
-![Portfolio-Demo](./assets/images/screenshot.png)
+![Portfolio-Demo](assets/images/Portfolio.gif)

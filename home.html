@@ -7,40 +7,125 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <!-- Link to  css style sheet -->
-    <link rel="stylesheet" type="text/css" href="./assets/css/homestyle.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
     <!-- Setting an icon for this page -->
     <link rel="shortcut icon" type="image/png" href="./assets/images/favicon.png">
-   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 </head>
   
-  
- <body>
-    <div class="container">
-      <!-- headers -->
-        <h5>Welcome to my Portfolio</h5>
-        <h1>Nadine Mohsen</h1>
-        <h5>Web Developer</h5>
-      <!-- links to linkedin and github -->
-        <div>
-        <a class="btn-floating btn-small waves-effect waves-light transparent links" href="https://www.linkedin.com/in/nadine-mohsen/"><img src="./assets/images/linkedin.png"></a>
-        <a class="btn-floating btn-small waves-effect waves-light transparent links" href="https://github.com/NadineMohsen"><img src="./assets/images/github.png"></a>
+  <body>
+
+   <header>
+       <!-- navbar -->
+    <nav>
+        <div class="nav-wrapper #0d47a1 blue darken-4">
+          <a href="./index.html" class="brand-logo">Nadine Mohsen</a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="./contact.html">Contact Me</a></li>
+          </ul>
         </div>
-        <!-- links to other pages -->
-        <button class="btn waves-effect waves-light blue-text text-darken-2 white" type="submit" name="action">
-            <a href="./index.html">About Me</a>
-        </button>
-        <button class="btn waves-effect waves-light white-text blue lighten-1" type="submit" name="action">
-          <a href="./contact.html" class="contactme">Contact Me</a>
-        </button>
-        <div>
-          <!-- resume -->
-        <button class="btn waves-effect waves-light  hoverable light-green  custom-button" type="submit" name="action"><a href="NadineMohsen-CV2022 .pdf" class="white-text">
-            Resume <i class="material-icons">arrow_downward</i></a>
-        </button>
-        </div>
+      </nav>
+    
+      <ul class="sidenav" id="mobile-demo">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="#about-me">About Me</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="./contact.html">Contact Me</a></li>
+      </ul>
+    </header>        
+<!-- about me section -->
+    <div class="slider" id="#about-me">
+      <ul class="slides">
+        <li>
+          <img src="./assets/images/background1.jpg">
+          <div class="caption center-align">
+            <h3>About Me</h3>
+            <h5 class="light grey-text text-lighten-3">Dedicated, motivated trilingual (English, Arabic, French) Junior Web Developer able to build a website from ground up: concept, navigation, layout and programming. Skilled at writing well-designed, testable and efficient code using current best practices in Web development. Fast learner, hard worker and team player who is proficient in an array of scripting languages and multimedia Web tools.</h5>
+          </div>
+        </li>
+      </ul>
     </div>
- 
+
+<!-- work section -->
+    <div class="slider">
+      <ul class="slides">
+        <li>
+          <img src="./assets/images/background-3.jpg">
+          <div class="caption center-align">
+            <h3>Work</h3>
+            <h5 class="light grey-text text-lighten-3">CryptoGuide, Weather Dashboard and Work Day Scheduler</h5>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+        
+        <!-- Second Section: Work -->
+        <section id="work">
+           
+            <span>
+
+           <!-- Each of the folliwing sections is a link to a project -->
+            <a  href="https://josephcurtis1999.github.io/CryptocurrencyFinder/" id="p1" class="grow" target="_blank"> 
+                <div>
+                    <h3>CryptoGuide</h3>
+                    <img class= "icons" src="./assets/images/git.png" id="icon1">
+                    <img class= "icons" src="./assets/images/web.png">
+                </div>
+            </a>
+
+            
+            <a href="https://nadinemohsen.github.io/Weather-Dashboard/" id="p2" class="projects" target="_blank">
+            <div>
+                <h3>Weather Dashboard</h3> 
+                <img class= "icons" src="./assets/images/git.png" id="icon2">
+                <img class= "icons" src="./assets/images/web.png">
+            </div>
+            </a>
+
+            <a href="https://nadinemohsen.github.io/Work-day-scheduler/" id="p3" class="projects" target="_blank">
+            <div>
+                <h3>Work Day Scheduler</h3> 
+                <img class= "icons" src="./assets/images/git.png" id="icon3">
+                <img class= "icons" src="./assets/images/web.png" >
+            </div>
+            </a>
        
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  </body>
-</html>
+            </span>
+        </section>
+
+
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+         <script>  $(document).ready(function(){
+            $('.sidenav').sidenav();
+          });
+          
+  $(document).ready(function(){
+    $('.slider').slider({height:350,indicators:false})
+ 
+  });
+
+  var p1repo= document.getElementById("icon1")
+  p1repo.addEventListener("click",function(){
+    document.location.replace("https://github.com/JosephCurtis1999/CryptocurrencyFinder")
+  })
+
+  var p2repo= document.getElementById("icon2")
+  p2repo.addEventListener("click",function(){
+    document.location.replace("https://github.com/NadineMohsen/Weather-Dashboard")
+  })
+
+  var p3repo= document.getElementById("icon3")
+  p3repo.addEventListener("click",function(){
+    document.location.replace("https://github.com/NadineMohsen/Work-day-scheduler")
+  })
+       </script>
+        </body>
+    </html>
+
