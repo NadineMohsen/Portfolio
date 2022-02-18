@@ -5,61 +5,69 @@
     <title>Portfolio</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- Link to css reset sheet -->
-    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <!-- Link to  css style sheet -->
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
     <!-- Setting an icon for this page -->
     <link rel="shortcut icon" type="image/png" href="./assets/images/favicon.png">
-  </head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
   
   <body>
-  
-    <!-- Header section of the page includigng a title and links to each section of the page-->
-    <header>
-      <h1>Nadine Mohsen</h1>
-      <nav>
-        <ul>
-            <li>
-                <a href="#about-me">About Me</a>
-            </li>
-            <li>
-                <a href="#work">Work</a>
-            </li>
-            <li>
-                <a href="#contact-me">Contact Me</a>
-            </li>
-            <li>
-                <a href="#resume">Resume</a>
-            </li>
-        </ul>
-    </nav>
-    </header>
 
-    <div class="top">
-        <h2> 
-            PORTFOLIO
-        </h2>
+   <header>
+       <!-- navbar -->
+    <nav>
+        <div class="nav-wrapper #0d47a1 blue darken-4">
+          <a href="./home.html" class="brand-logo">Nadine Mohsen</a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="./contact.html">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    
+      <ul class="sidenav" id="mobile-demo">
+        <li><a href="./home.html">Home</a></li>
+        <li><a href="#about-me">About Me</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="./contact.html">Contact Me</a></li>
+      </ul>
+    </header>        
+<!-- about me section -->
+    <div class="slider" id="#about-me">
+      <ul class="slides">
+        <li>
+          <img src="./assets/images/background1.jpg">
+          <div class="caption center-align">
+            <h3>About Me</h3>
+            <h5 class="light grey-text text-lighten-3">Dedicated, motivated trilingual (English, Arabic, French) Junior Web Developer able to build a website from ground up: concept, navigation, layout and programming. Skilled at writing well-designed, testable and efficient code using current best practices in Web development. Fast learner, hard worker and team player who is proficient in an array of scripting languages and multimedia Web tools.</h5>
+          </div>
+        </li>
+      </ul>
     </div>
 
-        <!-- First Section: About-me -->
-        <section id="about-me">
-            <!-- Title -->
-            <h2>About Me</h2>
-            <div> 
-                <!-- image and patagraph -->
-                <img src="./assets/images/mypic.png" alt="Photo of me"/>
-                <p> My educational background in communication & electronics engineering, combined with my coding bootcamp and internship experiences, have prepared me to take my first step in the industry.
-                I did a coding bootcamp at University of Birmingham where I developed my coding skills.
-                I aim to drive project alignment and produce high-quality deliverables with minimal revisions. 
-            </p>
-            </div>
-        </section>
+<!-- work section -->
+    <div class="slider">
+      <ul class="slides">
+        <li>
+          <img src="./assets/images/background-3.jpg">
+          <div class="caption center-align">
+            <h3>Work</h3>
+            <h5 class="light grey-text text-lighten-3">CryptoGuide, Weather Dashboard and Work Day Scheduler</h5>
+          </div>
+        </li>
+      </ul>
+    </div>
 
         
         <!-- Second Section: Work -->
         <section id="work">
-            <h2>Work</h2>
+           
             <span>
 
            <!-- Each of the folliwing sections is a link to a project -->
@@ -81,38 +89,23 @@
                 <h3>Work Day Scheduler</h3> 
             </div>
             </a>
-
-            <!-- <a href="https://www.google.co.uk/" id="p4" class="projects" target="_blank">
-            <div>
-                <h3></h3>
-            </div>
-            </a> -->
        
             </span>
         </section>
 
-         <!-- Third Section: Contact-me -->
-        <section id="contact-me">
-            <h2>Contact Me</h2>
-            <p> Telephone Number: 00000000 <br>
-                Email: nadine.mohsen@hotmail.com
-            </p>
-        </section>
 
-         <!-- Fourth Section: Resume -->
-        <section id="resume">
-            <h2>Resume</h2>
-            <!-- Link to another html page including my resume -->
-            <p> 
-                <a href="resume.html" target="_blank" >Click here to see my Resume</a>
-            </p>
-        </section>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+         <script>  $(document).ready(function(){
+            $('.sidenav').sidenav();
+          });
+          
+  $(document).ready(function(){
+   
+    $('.slider').slider({height:350,indicators:false})
 
  
-         <footer>
-             Thank you!
-         </footer>
-        
-    
-    </body>
+  });
+       </script>
+        </body>
     </html>

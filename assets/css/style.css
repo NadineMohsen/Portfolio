@@ -1,6 +1,5 @@
 /* Setting Css variables */
 :root{
-    --dark: rgb(51, 50, 77);
     --white:#ffffff;
     --gold:#baab8f; 
     --font: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -11,108 +10,31 @@
 body{
     font-family: var(--font);
     display:flex;
-    /* flex-wrap:wrap; */
     flex-direction:column;
-    line-height:1.3;
+    line-height:1.3;}
+
+/* font varianf for my name */
+.brand-logo{
+    font-variant: small-caps;
+}
+/* padding for my name */
+a{
+   margin-left:10px;
+}
+/* margin for slider */
+.slider{
+    margin-top:20px;
+}
+/* font size for slider h5 */
+h5{
+    font-size:20px;
 }
 
-/* Header section is flexible when we change the window size, it wraps into a column */
-header {
-    display:flex;
-    justify-content: space-between;
-    align-items:center;
-    padding:1%;
-    background-color: var(--dark);
-    font-variant:small-caps;      
-}
-
-header h1 {
-    font-size: 250%;
-    color:var(--white); 
-}
-
-/* Links are fixed to the right */
-header nav{
-    float:right;
-    margin-right:3%;   
-}
-
-/* Links are at the same line as h1 */
-header nav ul li{
-    display:inline-block;
-    font-size:120%;
-    margin-left:25px;   
-}
-
-header nav ul li a{
-    color:var(--gold);
-}
-
-/* Setting a background image */
-.top {
-    height: 150px;
-    width: 100%;
-    background-image: url("../images/header1.jpg");
-    background-size: cover;
-    background-position: center; 
-    display:flex;
-    justify-content: space-between;
-    align-items:flex-end;
-    padding-bottom:2%;
-}
-
-/* Position for h2 element */
-.top h2{
-    color:var(--dark);
-    font-size:200%;
-    position:absolute;
-    right:3%;
-}
-
-section{
-    padding:10px;
-} 
-
-section h2{
-    font-size:150%;
-    margin-bottom:15px;   
-}
-
-#about-me div{
-    display:flex;
-    justify-content: space-between; 
-    align-items:center;     
-}
-
-/* Paragraph in about-me section */
-#about-me p{
-    padding:10px;
-    border-style:solid;
-    border-radius:10px;
-    border-color:var(--gold);
-}
-
-/* My photo is fixed to the left next to paragraph */
-img{
-    float:left;
-    border-radius:10px;
-    border-color:var(--gold);
-    border-style:solid;
-    border-width: 5px;
-    width:170px;
-    height:150px;
-    margin-right:25px;
-}
-
-/* h3 elements are displayed on background-images for all projects */
-h3{
-    display:inline-block;
-    color:var(--white);
-    font-size:130%;
-    padding:4px;
-    border-style:solid;
-    border-color: var(--gold);
-    
+section h3{
+    font-size:170%;
+    margin-bottom:15px;
+    background-color:#0d47a1;
+   color:white;
 }
 
  span{
@@ -150,9 +72,7 @@ h3{
 /* Changing the design when the user hover over each project */
 .projects:hover , .grow:hover{
     opacity:1;
-    font-size:150%;
-    font-style:oblique;
-    transform: rotate(1deg);
+    font-size:110%;
 }
 
 /* Background-image for each project */
@@ -167,60 +87,30 @@ h3{
 #p3{
     background-image: url("../images/img3.jpg");
 }
-   
-#p4{
-    background-image: url("../images/img4.jpg");
-}
-
-/* Adding emoji after footer */
-footer:after{
-content:"😀";
-}
-
-footer{
-    font-size:120%;
-    color:var(--gold);
-    margin-top:20px;
-    margin-bottom:20px;
-    text-align:center;
-}
 
 /* When the screen is smaller than 768px the layout will change */
 @media screen and (max-width: 768px) {
-    /* all sections will wrap into a column */
-    header{
-        flex-direction: column;
-      }
-
-    .top{
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        height:100px;
+    /* slider h3 and h5 */
+    h3{
+        margin-top:0px;
+        padding:0;
+        font-size:25px;
     }
-    .top h2{
-        position:static;
-    } 
-
-    /* h2 and p will move to the center */
-    section h2,p{
-        text-align:center;
+    h5{
+        font-size:18px;
     }
     /* h2 will have a background-color */
-    section h2{
-        background-color:var(--gold);
-    }
+    section h3{
+        background-color:rgb(70, 71, 63);
+        color:white;
+    } 
     .grow{
         flex:2 0 300px;
     }
-    #about-me div, #work{
+     #work{
         flex-direction: column;
     }
-
-    img{
-        margin-bottom:20px;
-        margin-right:0;
-      }
-      
-   
 }
+
+
+
