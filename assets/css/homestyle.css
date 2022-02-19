@@ -20,12 +20,9 @@ button{
 }
 
 img{
-    width:35px;
-    height:35px;
-}
-
-.links{
-    margin-top:20px;
+    width:50px;
+    height:50px;
+    margin-top:30px;
 }
 .custom-button{
     margin-top:3%;  
